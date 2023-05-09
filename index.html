@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Astronómica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <a href="#" class = "logo">
+      <span>ASOCIACIÓN</span>  ASTRONÓMICA DE FORMENTERA</a>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+      <nav class = "navbar">
+         <a href="#Inicio">Inicio</a>
+         <a href="#SalidasAstronómicas">Salidas Astronómicas</a>
+          
+         <a href="#Documentación y bibiografía Astronómica">Bibiografía Astronómica</a>
+         <a href="#Links de interés">Links de interés</a>
+         <a href="#Contacto">Contacto</a>
+      </nav>   
+  </header>
+  <section class="Inicio" id="Inicio">
+    <div class="content">
+      <h3>Explora el Universo con nosotros!! 
+      <span></span></h3>
+      <p>Fundada en 2019, la Asociación Astronómica de Formentera, AAF, es una organización sin ánimo de lucro dirigida completamente por Astrónomos Amateurs voluntarios, 
+      que promueve el estudio y la conciencia pública del cosmos a través de la observación, 
+      la educación, el alcance comunitario y la astrofotografía.</p>
+      <a href="#" class="btn">Mas detalles</a>
+    </div>
+  </section>
+
+  <section class="SalidasAstronómicas" id="SalidasAstronómicas">
+    <h1 class="heading"> EVENTOS QUE REALIZA LA ASOCIACIÓN </h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+            <img src="img/earth_moon.jpg" alt="">
+            <h3>Salidas Astronómicas para observar nuestra Luna</h3>
+            <p>Periódicamente se realizan observaciones para disfrutar del objeto astronómico que tenenmos mas cerca. 
+            Este es la Luna. En estos eventos se puede observar 
+            los crateres (mares), de color mas oscuro, y las zonas mas elevadas (highlands) de color mas claro. Cada crater tiene su propia historia que siempre compartimos con nuestros amigos. </p>
+            <a href="#" class="btn">Ver mas</a>
+        </div>
+        
+        <div class="caja">
+            <img src="img/Saturn.png" alt="">
+            <h3>Salidas Astronómicas para observar Los Planetas</h3>
+            <p>Jupiter, Saturno, Marte, algunas veces Venus y en alguna ocasión Urano son los planetas que con mas frecuencia
+            se suelen observar. Observar los Jupiter y Saturno con tus propios ojos es una experiencia que todo el mundo debería experimentar una vez en la vida.
+            Los anillos de Saturno son sublimes, al igual que las bandas atmosféricas de Jupiter.   </p>
+            <a href="#" class="btn">Ver mas</a>
+        </div>
+        <div class="caja">
+            <img src="img/hydra_2.png" alt="">
+            <h3>Salidas Astronómicas para observar las constelaciones de Formentera</h3>
+            <p>Salidas Astronómicas para disfrutar de las constelaciones visibles en Formentera a lo largo del año. 
+            En esta fotografía obtenida por un miembro de la Asociación se puede apreciar la constelación de Hydra. </p>
+            <a href="#" class="btn">Ver mas</a>
+        </div>
+    </div>
+  </section>
+  <section class="formacion" id="formacion">
+    <h1 class="heading"> FORMACIÓN QUE OFRECE LA ASOCIACIÓN </h1>
+    <div class="columna">
+      <div class="image">
+        <img src="img/" alt="">
+      </div>
+      <div class="content">
+        <h3>Taller de montaje de telescopios</h3>
+        <p>En este tipo de talleres se aprende a montar y desmontar un telescopio. Se explica el funcionamiento y la estructura de cada una de las piezas que compone un telescopio.
+          Se dota al alumno/a de las capacidades para que pueda montar el suyo propio con nuestro asesoramiento.  </p>
+      </div>
+    </div>
+
+  </section>
+  <section class="Contacto" id="Contacto">
+    <div class="image">
+      <img src="img/contact.jpeg" alt="">
+    </div>
+    <form action="enviar_formulario.py" method="post">
+      <input type="hidden" name="to" value="astronomiaformentera@gmail.com">
+      <h1 class="heading">CONTACTO</h1>
+      <div class="inputcaja">
+        <input type="text" name="nombre" required>
+        <label for="">Nombre</label>
+      </div>
+      <div class="inputcaja">
+        <input type="email" name="email" required>
+        <label for="">Email</label>
+      </div>
+      <div class="inputcaja">
+        <input type="number" name="telefono" required>
+        <label for="">Telefono</label>
+      </div>
+      <div class="inputcaja">
+        <textarea name="mensaje" required id="" cols="30" rows="10"></textarea>
+        <label for="">Mensaje</label>
+      </div> 
+      <input type="hidden" name="to" value="astronomiaformentera@gmail.com">
+      <input type="submit" class="btn" value="ENVIAR"> 
+    </form>
+  </section>
+  
+  
+</body>
+</html>
